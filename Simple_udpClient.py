@@ -1,12 +1,12 @@
 from socket import *
 
-def criptografar_vigenere(plain_text, key):
+def criptografar_vigenere(mensagem, chave):
     texto_criptografado = ""
-    tamanhoDaChave = len(key)
-    for i in range(len(plain_text)):
-        char = plain_text[i]
+    tamanhoDaChave = len(chave)
+    for i in range(len(mensagem)):
+        char = mensagem[i]
         if char.isalpha():
-            chave_char = key[i % tamanhoDaChave]
+            chave_char = chave[i % tamanhoDaChave]
             shift = ord(chave_char) - ord('a')
             if char.isupper():
                 charCriptografado = chr((ord(char) + shift - ord('A')) % 26 + ord('A'))
