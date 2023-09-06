@@ -1,12 +1,12 @@
 from socket import *
 
-def descriptografa_vigenere(cifra, key):
+def descriptografa_vigenere(cifra, chave):
     mensagemDescriptografada = ""
-    tamanhoChave = len(key)
+    tamanhoChave = len(chave)
     for i in range(len(cifra)):
         char = cifra[i]
         if char.isalpha():
-            chaveChar = key[i % tamanhoChave]
+            chaveChar = chave[i % tamanhoChave]
             shift = ord(chaveChar) - ord('a')
             if char.isupper():
                 charDescriptografado = chr((ord(char) - shift - ord('A')) % 26 + ord('A'))
