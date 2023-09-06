@@ -10,5 +10,4 @@ Rodrigo Emiliano de Oliveira 081190004 <br>
 
 # Vídeo
 Se não for possível carregar o vídeo no OneDrive, baixe o vídeo. <br>
-https://1drv.ms/u/s!Ag-akAKT0hLMgxKBr1S1ZtAUtjEm?e=vFF2yk
 
